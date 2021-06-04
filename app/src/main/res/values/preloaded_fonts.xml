@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amaranth_italic</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/bree_serif</item>
+        <item>@font/jim_nightshade</item>
+        <item>@font/lemonada</item>
+        <item>@font/playball</item>
+    </array>
+</resources>

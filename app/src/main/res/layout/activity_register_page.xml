@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#85BCFF00"
+    android:background="#85F5FFDA"
     tools:context=".registerPage">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/rlog"
         android:layout_width="294dp"
         android:layout_height="40dp"
         android:clickable="true"
@@ -123,12 +123,13 @@
 
     <Button
         android:id="@+id/rbtn"
-        android:layout_width="300dp"
-        android:layout_height="51dp"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
         android:background="#C8FF00"
         android:fontFamily="@font/amaranth_italic"
         android:padding="5sp"
         android:text="Submit"
+        android:textAllCaps="False"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

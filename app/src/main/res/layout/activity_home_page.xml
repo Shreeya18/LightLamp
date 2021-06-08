@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E7FFBA"
+    android:background="#FDF5FF"
     tools:context=".HomePage">
 
     <Button
         android:id="@+id/elogin"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
         android:background="#3B0757"
-        android:backgroundTint="#5A3232"
-        android:text="LOGIN"
+        android:backgroundTint="#FFFFFF"
+        android:text="Login"
+        android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintVertical_bias="0.713" />
 
     <EditText
         android:id="@+id/epass"
@@ -74,8 +75,8 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="140dp"
-        android:layout_height="74dp"
+        android:layout_width="126dp"
+        android:layout_height="64dp"
         android:text="Join Now"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

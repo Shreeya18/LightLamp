@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LightLamp">
-        <activity android:name=".registerPage"></activity>
-        <activity android:name=".feedPage" />
+        <activity android:name=".feedPage"></activity>
+        <activity android:name=".registerPage" />
         <activity android:name=".HomePage" />
         <activity android:name=".MainActivity">
             <intent-filter>

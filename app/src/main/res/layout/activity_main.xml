@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/mainText"
-        android:layout_width="324dp"
-        android:layout_height="107dp"
+        android:layout_width="331dp"
+        android:layout_height="125dp"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/playball"
@@ -26,20 +26,20 @@
         android:textSize="59sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.584" />
 
     <ImageView
-        android:layout_width="243dp"
-        android:layout_height="146dp"
+        android:layout_width="299dp"
+        android:layout_height="241dp"
         android:src="@drawable/lightlampi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
+        app:layout_constraintVertical_bias="0.191" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,46 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_width="67dp"
-        android:layout_height="62dp"
-        android:src="@drawable/lightlampi"
-        android:id="@+id/img1"/>
+        android:id="@+id/img1"
+        android:layout_width="79dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/lightlampi" />
 
     <TextView
-        android:layout_width="250dp"
-        android:layout_height="65dp"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
         android:padding="15dp"
         android:text="Name of User"
         android:textSize="25sp"
+        android:layout_toRightOf="@id/img1"
         android:id="@+id/userName"/>
 
     <ImageView
         android:id="@+id/imag"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/img1"
         android:src="@drawable/lightlampi" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Like"
-        android:id="@+id/like_btn"/>
+        android:id="@+id/like_btn"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/imag"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_baseline_thumb_up_24"
+        android:paddingLeft="15dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comment"
-        android:id="@+id/cmnt_btn"/>
+        android:id="@+id/cmnt_btn"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/imag"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@id/like_btn"
+        android:background="@drawable/ic_baseline_comment_24" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Share"
-        android:id="@+id/share_btn"/>
+        android:id="@+id/share_btn"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/imag"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/cmnt_btn"
+        android:background="@drawable/ic_baseline_share_24" />
 
 
-</LinearLayout>
+
+</RelativeLayout>

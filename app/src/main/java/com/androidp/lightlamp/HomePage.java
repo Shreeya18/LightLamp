@@ -15,6 +15,9 @@ import javax.xml.validation.Validator;
 public class HomePage extends AppCompatActivity {
    private EditText email;
    private EditText epass;
+   String name = "dholeshreeya18@gmail.com";
+   String password = "shree@18";
+   boolean isValid = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +35,21 @@ public class HomePage extends AppCompatActivity {
                  String emailid = email.getText().toString();
                  String epassw = epass.getText().toString();
 
-                Toast.makeText(HomePage.this,"Logged In !",Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(HomePage.this,feedPage.class);
-                startActivity(intent);
+                 if (emailid.isEmpty() || epassw.isEmpty()) {
+                     Toast.makeText(HomePage.this, "Log In Fields Cannot be Empty", Toast.LENGTH_LONG).show();
+                 }
+                 else {
+                     isValid = Validate(emailid, epassw);
+                     if (!isValid) {
+                         Toast.makeText(HomePage.this, "Incorrect Credentials", Toast.LENGTH_LONG).show();
+                     } else {
+                         Toast.makeText(HomePage.this, "Successfully Logged In !", Toast.LENGTH_SHORT).show();
 
-
+                         Intent intent = new Intent(HomePage.this, feedPage.class);
+                         startActivity(intent);
+                     }
+                 }
 
 
             }
@@ -51,10 +63,9 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+    }
 
-
-
-
-
+    private boolean Validate(String username, String passw){
+        return username.equals(name) && passw.equals(password);
     }
 }
